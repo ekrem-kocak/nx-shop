@@ -13,6 +13,7 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strict": true,
     "paths": {
       "@nx-shop/prisma-client": ["generated/prisma/client.ts"],
       "@nx-shop/data-access-db": ["./libs/src/index.ts"]
