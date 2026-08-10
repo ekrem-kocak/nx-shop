@@ -6,6 +6,7 @@ import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AppResolver } from './app.resolver';
+import { ProductsModule } from '@nx-shop/backend/products';
 
 @Module({
   imports: [
@@ -15,6 +16,8 @@ import { AppResolver } from './app.resolver';
       playground: process.env.NODE_ENV !== 'production',
       autoSchemaFile: join(process.cwd(), 'apps/backend/src/schema.gql'),
     }),
+
+    ProductsModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppResolver],

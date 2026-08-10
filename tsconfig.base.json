@@ -16,7 +16,8 @@
     "strict": true,
     "paths": {
       "@nx-shop/prisma-client": ["./generated/prisma/client.ts"],
-      "@nx-shop/data-access-db": ["./libs/shared/data-access-db/src/index.ts"]
+      "@nx-shop/data-access-db": ["./libs/shared/data-access-db/src/index.ts"],
+      "@nx-shop/backend/products": ["./libs/backend/products/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
