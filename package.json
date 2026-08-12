@@ -25,6 +25,10 @@
     "prisma:studio": "prisma studio",
     "prisma:db:push": "prisma db push",
     "prisma:seed": "prisma db seed",
+    "docker:up": "docker compose up -d --wait",
+    "docker:down": "docker compose down",
+    "setup": "npm run docker:up && npm run prisma:migrate:deploy && npm run prisma:seed",
+    "postinstall": "prisma generate",
     "graph": "nx graph",
     "reset": "nx reset",
     "prepare": "husky"

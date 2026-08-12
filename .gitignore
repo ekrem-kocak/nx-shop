@@ -51,4 +51,4 @@ __screenshots__/
 /generated/prisma
 
 .env*
-!.env-example
+!.env.example
